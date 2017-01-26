@@ -32,7 +32,7 @@ module.exports = {
 				test: /\.sass$/,
 				loader: ExtractTextPlugin.extract({
 					fallbackLoader: 'style-loader',
-					loader: 'css-loader!sass-loader'
+					loader: 'css-loader!postcss-loader!sass-loader'
 				})
 			},
 			{
